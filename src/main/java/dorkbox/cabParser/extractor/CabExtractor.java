@@ -145,7 +145,7 @@ public class CabExtractor {
      * 
      * @return <code>true</code> if files were extracted, <code>false</code>
      *         otherwise (if executed second time on the same
-     *         {@link CabExtractor) object)
+     *         {@link CabExtractor} object)
      */
     public boolean extract() throws CabException, IOException {
         boolean result = done.compareAndSet(false, true);

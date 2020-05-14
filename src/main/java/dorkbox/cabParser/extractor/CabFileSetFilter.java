@@ -35,7 +35,7 @@ public class CabFileSetFilter implements CabFileFilter {
      *            single file name to extract (case-insensitive)
      */
     public CabFileSetFilter(final String fileName) {
-        this.fileNames = new HashSet<String>();
+        this.fileNames = new HashSet<>();
         this.fileNames.add(fileName.toLowerCase());
     }
 
@@ -46,7 +46,7 @@ public class CabFileSetFilter implements CabFileFilter {
      *            file names to extract (case-insensitive)
      */
     public CabFileSetFilter(final Iterable<String> fileNames) {
-        this.fileNames = new HashSet<String>();
+        this.fileNames = new HashSet<>();
         for (String i : fileNames) {
             this.fileNames.add(i.toLowerCase());
         }
