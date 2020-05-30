@@ -41,7 +41,7 @@ final class CabInputStream extends InputStream {
         throw new IOException();
     }
 
-    CabInputStream(InputStream inputStream) {
+    public CabInputStream(InputStream inputStream) {
         this.inputStream = inputStream;
         this.position = 0L;
         this.markSupported = this.inputStream.markSupported();

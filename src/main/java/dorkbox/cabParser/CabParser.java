@@ -23,6 +23,7 @@ import java.io.File;
 import java.util.Enumeration;
 
 import dorkbox.cabParser.decompress.CabDecompressor;
+import dorkbox.cabParser.structure.CabEntry;
 import dorkbox.cabParser.structure.CabEnumerator;
 import dorkbox.cabParser.structure.CabFileEntry;
 import dorkbox.cabParser.structure.CabFolderEntry;
@@ -102,11 +103,11 @@ public final class CabParser {
         return "2.15";
     }
 
-    public Enumeration<Object> entries() {
+    public Enumeration<CabEntry> entries() {
         return new CabEnumerator(this, false);
     }
 
-    public Enumeration<Object> entries(boolean b) {
+    public Enumeration<CabEntry> entries(boolean b) {
         return new CabEnumerator(this, b);
     }
 

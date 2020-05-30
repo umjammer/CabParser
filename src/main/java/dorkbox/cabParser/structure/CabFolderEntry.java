@@ -20,7 +20,10 @@ import java.io.InputStream;
 
 import dorkbox.util.bytes.LittleEndian;
 
-public final class CabFolderEntry implements CabConstants {
+import static dorkbox.cabParser.structure.CabConstants.COMPRESSION_TYPE_NONE;
+import static dorkbox.cabParser.structure.CabConstants.COMPRESSION_TYPE_MSZIP;
+
+public final class CabFolderEntry implements CabEntry {
     /** offset of the first CFDATA block in this folder, 4bytes */
     public long coffCabStart;
 
@@ -67,6 +70,11 @@ public final class CabFolderEntry implements CabConstants {
 
     public void setCompression(int a, int b) {
         this.compressionMethod = b << 8 | a;
+    }
+
+    @Override
+    public String getName() {
+        return null; // TODO
     }
 }
 

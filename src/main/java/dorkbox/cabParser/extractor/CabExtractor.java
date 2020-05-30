@@ -27,6 +27,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import dorkbox.cabParser.CabException;
 import dorkbox.cabParser.CabParser;
 import dorkbox.cabParser.CabStreamSaver;
+import dorkbox.cabParser.structure.CabEntry;
 import dorkbox.cabParser.structure.CabFileEntry;
 import dorkbox.cabParser.structure.CabFolderEntry;
 import dorkbox.cabParser.structure.CabHeader;
@@ -163,11 +164,11 @@ public class CabExtractor {
         return CabParser.getVersion();
     }
 
-    public Enumeration<Object> entries() {
+    public Enumeration<CabEntry> entries() {
         return parser.entries();
     }
 
-    public Enumeration<Object> entries(boolean b) {
+    public Enumeration<CabEntry> entries(boolean b) {
         return parser.entries(b);
     }
 
@@ -179,7 +180,7 @@ public class CabExtractor {
         return parser.folders;
     }
 
-    public CabFileEntry[] getFiles() {
+    public CabEntry[] getFiles() {
         return parser.files;
     }
 

@@ -24,7 +24,7 @@ import dorkbox.cabParser.CabException;
 import dorkbox.cabParser.CorruptCabException;
 import dorkbox.util.bytes.LittleEndian;
 
-public final class CabFileEntry {
+public final class CabFileEntry implements CabEntry {
     public static final Charset US_ASCII = Charset.forName("US-ASCII");
 
     /** file is read-only (in HEX) */

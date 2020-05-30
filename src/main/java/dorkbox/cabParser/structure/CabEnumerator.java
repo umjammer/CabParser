@@ -20,7 +20,7 @@ import java.util.NoSuchElementException;
 
 import dorkbox.cabParser.CabParser;
 
-public final class CabEnumerator implements Enumeration<Object> {
+public final class CabEnumerator implements Enumeration<CabEntry> {
     private int        fileCount = 0;
     private int        folderCount = 0;
 
@@ -30,7 +30,7 @@ public final class CabEnumerator implements Enumeration<Object> {
     private int        folderIndex;
 
     @Override
-    public Object nextElement() {
+    public CabEntry nextElement() {
         if (!this.b) {
             if (this.fileCount < this.cabParser.header.cFiles) {
                 return this.cabParser.files[this.fileCount++];

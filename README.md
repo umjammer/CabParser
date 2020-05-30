@@ -1,8 +1,6 @@
-CAB PARSER
-===========
+[![Release](https://jitpack.io/v/umjammer/CabParser.svg)](https://jitpack.io/#umjammer/CabParser) [![Java CI with Maven](https://github.com/umjammer/CabParser/workflows/Java%20CI%20with%20Maven/badge.svg)](https://github.com/umjammer/CabParser/actions) [![Parent](https://img.shields.io/badge/Parent-vavi--util--archive-pink)](https://github.com/umjammer/vavi-util-archive)
 
-###### [![Dorkbox](https://badge.dorkbox.com/dorkbox.svg "Dorkbox")](https://git.dorkbox.com/dorkbox/CabParser) [![Github](https://badge.dorkbox.com/github.svg "Github")](https://github.com/dorkbox/CabParser) [![Gitlab](https://badge.dorkbox.com/gitlab.svg "Gitlab")](https://gitlab.com/dorkbox/CabParser) [![Bitbucket](https://badge.dorkbox.com/bitbucket.svg "Bitbucket")](https://bitbucket.org/dorkbox/CabParser)
-
+# CAB PARSER
 
 
 Provides a means to parse and extract data from Microsoft CAB files, from Java.
@@ -13,38 +11,11 @@ Microsoft CAB file format: http://msdn.microsoft.com/en-us/library/bb417343.aspx
 
 - This is for cross-platform use, specifically - linux 32/64, mac 32/64, and windows 32/64. Java 6+
 
+## Install
 
+https://jitpack.io/#umjammer/CabParser
 
-&nbsp; 
-&nbsp; 
+## License
 
-Maven Info
----------
-```
-<dependencies>
-    ...
-    <dependency>
-      <groupId>com.dorkbox</groupId>
-      <artifactId>CabParser</artifactId>
-      <version>2.15</version>
-    </dependency>
-</dependencies>
-```
-
-Gradle Info
----------
-````
-dependencies {
-    ...
-    compile "com.dorkbox:CabParser:2.15"
-}
-````
-
-Or if you don't want to use Maven, you can access the files directly here:  
-https://repo1.maven.org/maven2/com/dorkbox/CabParser/  
-
-
-License
----------
 This project is © 2012 dorkbox llc, and is distributed under the terms of the Apache v2.0 License. See file "LICENSE" for further references.
 
